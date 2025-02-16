@@ -41,7 +41,9 @@
     * [18. Reverse Polish Notation](#18-reverse-polish-notation)
     * [19. Validating Parentheses in a String](#19-validating-parentheses-in-a-string)
     * [20. Solving the "Knapsack" Problem](#20-solving-the-knapsack-problem)
-<!-- TOC --># Задачи для освоения BCEL
+<!-- TOC -->
+
+# Задачи для освоения BCEL
 
 ### 1. Вывод "Hello, World!"
 **Вводная:** Используйте `GETSTATIC`, `LDC`, `INVOKEVIRTUAL` и `RETURN`. В BCEL используйте `InstructionFactory` для создания вызова метода `println`.  
