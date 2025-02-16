@@ -6,6 +6,7 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-       new Problem1Solver().solve();
+        Problem1Solver problem1Solver = new Problem1Solver();
+        problem1Solver.solve();
     }
 }

@@ -45,10 +45,15 @@ public class ClassCreator {
     }
 
     public void createMethod(Agent agent) {
-        Agent.Result result = agent.createMethod(cp, instructionFactory, className);
+        final Agent.Result result = agent.createMethod(cp, instructionFactory, className);
         result.methodGen.setMaxStack();
+        result.methodGen.setMaxLocals();
         classGen.addMethod(result.methodGen.getMethod());
         result.il.dispose();
+    }
+
+    public void finish() {
+        classGen.addEmptyConstructor(Const.ACC_PUBLIC);
     }
 
     public JavaClass getAndDumpJavaClass() throws IOException {
