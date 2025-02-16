@@ -23,6 +23,8 @@ public class Problem2Solver {
             il.append(InstructionFactory.createLoad(Type.INT, 1));
             il.append(InstructionFactory.createLoad(Type.INT, 2));
             il.append(InstructionConst.IADD);
+            il.append(InstructionFactory.createStore(Type.INT, 3)); // just for ISTORE in problem introduction
+            il.append(InstructionFactory.createLoad(Type.INT, 3)); // just for ISTORE in problem introduction
             il.append(InstructionFactory.createReturn(Type.INT));
             final MethodGen methodGen = new MethodGen(Const.ACC_PUBLIC , Type.INT, new Type[]{Type.INT, Type.INT}, new String[] {"a", "b"}, METHOD_NAME, className, il, cp);
             return new ClassCreator.Agent.Result(methodGen, il);

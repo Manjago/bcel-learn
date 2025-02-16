@@ -39,6 +39,8 @@ public class ClassCreator {
         classGen = new ClassGen(className,
                 "java.lang.Object",
                 fileName, Const.ACC_PUBLIC | Const.ACC_SUPER, null);
+        classGen.setMajor(Const.MAJOR_21);
+        classGen.setMinor(Const.MINOR_21);
 
         cp = classGen.getConstantPool();
         instructionFactory = new InstructionFactory(classGen, cp);

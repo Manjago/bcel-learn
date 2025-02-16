@@ -1,0 +1,33 @@
+// class version 65.0 (65)
+// access flags 0x21
+public class ru/temnenkov/bl/problem02/AddBcelImpl {
+
+  // compiled from: AddBcelImpl.class
+
+  // access flags 0x1
+  public add(II)I
+   L0
+    ILOAD 1
+    ILOAD 2
+    IADD
+    ISTORE 3
+    ILOAD 3
+    IRETURN
+   L1
+    LOCALVARIABLE this Lru/temnenkov/bl/problem02/AddBcelImpl; L0 L1 0
+    LOCALVARIABLE a I L0 L1 1
+    LOCALVARIABLE b I L0 L1 2
+    MAXSTACK = 2
+    MAXLOCALS = 4
+
+  // access flags 0x1
+  public <init>()V
+   L0
+    ALOAD 0
+    INVOKESPECIAL java/lang/Object.<init> ()V
+    RETURN
+   L1
+    LOCALVARIABLE this Lru/temnenkov/bl/problem02/AddBcelImpl; L0 L1 0
+    MAXSTACK = 1
+    MAXLOCALS = 1
+}
